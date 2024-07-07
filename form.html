@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration form</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <div class="main-form">
+    <div class="img-container">
+    <img src="form-img.jpg" alt="form-bg">
+    </div>
+
+    <div class="content-container">
+    <h1>Registration Form</h1>
+    <p>Please fill out this form with the required information</p>
+    <form>
+       <label>First Name: 
+        <input type="text" required /><br>
+       </label>
+       
+       <label>Last Name: 
+        <input type="text" required /><br>
+       </label>
+       <label>
+        Email: 
+        <input type="email" required /><br>
+       </label>
+       <label>
+        Create a New Password: 
+        <input type="password" required pattern="[a-z0-5]{8,}"/><br>
+       </label>
+
+       <label>
+        Age (years): 
+        <input type="number" required min="6" max="65"/><br>
+       </label>
+       <label>Gender: </label>
+       <label>
+       <input type="radio" checked style="display: inline;"/> Male
+       </label>
+       <label>
+       <input type="radio" style="display: inline;"/> Female
+       </label>
+       <label>
+       <input type="radio" style="display: inline;"/> Transgender
+       </label><br>
+       <label>Country: </label>
+       <label>
+        <input type="checkbox" style="display: inline;"/> Indian
+        </label>
+        <label>
+        <input type="checkbox" style="display: inline;"/> Foreiger
+        </label><br>
+        <label>State: 
+            <select>
+            <option>Choose you state</option>
+            <option>Tamil Nadu</option>
+            <option>Kerala</option>
+            <option>Andhra pradesh</option>
+            <option>Karnataka</option>
+            <option>Other</option>
+          </select>
+        </label><br>
+        <div class="submit-button">
+            <button>Submit</button>
+         </div>
+    </form>
+</div>
+</div>
+</body>
+</html>
